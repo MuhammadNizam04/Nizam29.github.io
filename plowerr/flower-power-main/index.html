@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Halaman Hati</title>
+</head>
+<body>
+    <audio id="backgroundAudio" src="lagu.mp3" preload="auto" loop></audio>
+    <div class="greetings">
+        <span>K</span>
+        <span>L</span>
+        <span>I</span>
+        <span>K</span>
+        <span></span>
+        <span>M</span>
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>S</span>
+    </div>
+    <div class="description">
+        <span>Dari Muhammad Nizam Tampan</span>
+    </div>
+    <div class="button">
+        <button>
+            <a href="flower.html">Tekan Gue</a>
+        </button>
+        <button id="playButton">Putar Lagu</button>
+        <button id="pauseButton">Hentikan Lagu</button>
+    </div>
+    <script>
+        const backgroundAudio = document.getElementById('backgroundAudio');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
+
+        playButton.addEventListener('click', function () {
+            backgroundAudio.play(); 
+        });
+
+        pauseButton.addEventListener('click', function () {
+            backgroundAudio.pause(); 
+        });
+    </script>
+</body>
+</html>
